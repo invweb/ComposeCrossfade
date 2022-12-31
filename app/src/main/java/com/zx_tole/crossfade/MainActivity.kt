@@ -47,7 +47,10 @@ fun CrossfadeDemo() {
                 }
             }
         }
-        Crossfade(targetState = currentColor, animationSpec = tween(3000)) { selectedColor ->
+        Crossfade(
+            targetState = currentColor,
+            animationSpec = tween(3000)
+        ) { selectedColor ->
             Box(modifier = Modifier
                 .fillMaxSize()
                 .background(selectedColor.color))
